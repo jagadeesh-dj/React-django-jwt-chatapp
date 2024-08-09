@@ -1,0 +1,233 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    scrollbar-width: none;
+}
+
+.main{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 95vh;
+}
+#col1{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: #eaf6f6;
+    padding: 0.5rem 0.5rem;
+    
+}
+
+#col2{
+    width: 70%;
+    height: 100%;
+   
+}
+.chatbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem;
+    background-color: #eaf6f6;
+}
+#search-box input[type='text']{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    font-size: large;
+}
+#user-menus{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+}
+#title1{
+    border-bottom: 3px solid green;
+}
+#list1{
+    position: absolute;
+    overflow-y: scroll;
+    width: 100%;
+    height: 69vh;
+    /* background-color: blue; */
+    margin-top: 10px;
+}
+#members{
+    width: 100%;
+    min-height: 50px;
+    background: gainsboro;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+    gap: 10px;
+}
+#members img{
+    border-radius: 50%;
+}
+#profile-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 10%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+}
+#profile img{
+    width: 40px;
+    height: 40px;
+}
+#chat-area{
+    width: 100%;
+    min-height: 75%;
+    overflow-y: scroll;
+    background-color: transparent;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+table{
+    position: relative;
+    width: 100%;
+}
+tbody tr{
+    margin-bottom: 5px;
+}
+#rec{
+    display: flex;
+    gap: 10px;
+}
+#rec img{
+    border-radius: 50%;
+}
+#sec{ 
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+#sec img{
+    border-radius: 50%;
+}
+#send-box{
+    position: relative;
+    height: 6%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+#send-box input[type="text"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+    border: none;
+    background-color: transparent;
+
+}
+#send-box i{
+    position: absolute;
+    top: 70%;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    right: 0%;
+    color: #FFD43B;
+}
+#sender{
+    float: right;
+    background-color: #8971d0;
+    width: fit-content;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    border-radius: 10px;
+}
+#receiver{
+    text-align: left;
+    background-color: rgb(211, 210, 210);
+    padding: 0.5rem 0.5rem;
+    width: fit-content;
+    border-radius:10px;
+}
+.signup-page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+#signup{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(234, 235, 234);
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+}
+#signup, from, div{
+    margin-bottom: 10px;
+}
+#forms input[type="text"]{
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+}
+#forms input[type="password"]{
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+}
+#forms button{
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+}
+#profile img{
+    border-radius: 50%;
+}
+#loading{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader {
+    width: 45px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(#000 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
